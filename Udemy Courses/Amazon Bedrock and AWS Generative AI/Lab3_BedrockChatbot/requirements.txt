@@ -1,0 +1,4 @@
+AWS CLI, Bedrock
+langchain==0.2.12
+langchain_aws==0.1.16
+streamlit==1.37.1
