@@ -32,7 +32,7 @@ if input_text or end_conversation:
     if input_text == "/end":  # Check if the user entered the "/end" command
         st.session_state.chat_history = []  # Clear the chat history
         st.session_state.memory = demo.demo_memory()  # Reset the memory
-        st.experimental_rerun()  # Rerun the app to clear the UI
+        st.rerun()  # Rerun the app to clear the UI
     elif input_text:    
         # Display the user's message.
         with st.chat_message("user"): 

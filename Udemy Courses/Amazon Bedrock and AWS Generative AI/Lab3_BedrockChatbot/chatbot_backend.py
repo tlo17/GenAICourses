@@ -13,7 +13,7 @@ from langchain_aws import ChatBedrock #Allows interation of bedrock service
 #2a demo_chatbot creates a ChatBedrock instance, which establishes a connection to the Amazon Bedrock service. 
 # It specifies the AWS credentials profile, the model ID, and various inference parameters
 def demo_chatbot():
-    #Lines 16 - 24 show the API request call and inference parameters 
+    #Lines 17 - 24 show the API request call and inference parameters 
     demo_llm=ChatBedrock(
        credentials_profile_name='default',
        model_id='anthropic.claude-3-haiku-20240307-v1:0',
