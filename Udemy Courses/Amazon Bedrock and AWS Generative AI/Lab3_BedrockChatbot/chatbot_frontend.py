@@ -35,8 +35,7 @@ if input_text or end_conversation:
         st.rerun()  # Rerun the app to clear the UI
     elif input_text:    
         # Display the user's message.
-        with st.chat_message("user"): 
-            st.markdown(input_text) 
+        with st.chat_message("user"):  st.markdown(input_text) 
         # Adds user message to chat history
         st.session_state.chat_history.append({"role":"user", "text":input_text}) 
         #gets the chatbot's response using the demo_conversation function from the backend, passing the user's input and the memory. 
